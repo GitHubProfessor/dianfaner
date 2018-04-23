@@ -1,0 +1,25 @@
+<view class="container">  
+    <view class="header">合计：{{20}}</view>  
+    <view class="content">
+        <view class="pay-method">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <view class='wechat-pay'>
+                    <image src='/picture/wechatpay.png' style='width:120rpx;height:120rpx;'></image>
+                    <view style='flex-grow:1;line-height:120rpx;'>微信支付</view>
+                    <view style='flex-grow:2;text-align:right;line-height:120rpx;'>
+                        <radio value="a" checked/>
+                    </view>
+                </view>
+                <view class='ali-pay'>
+                    <image src='/picture/alipay.png' style='width:120rpx;height:120rpx;'></image>
+                    <view style='flex-grow:1;line-height:120rpx;'>支付宝支付</view>
+                    <radio></radio>
+                </view>
+            </radio-group>  
+        </view>
+    </view>
+
+    <view class="footer" bindtap="pay">
+        支付下单
+    </view>  
+</view>

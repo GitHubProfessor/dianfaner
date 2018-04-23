@@ -1,0 +1,4 @@
+<div class="parent">  
+<div class="stable">stable 固定宽度200px</div>  
+<div class="change">changeable 可变宽度</div>  
+</div>

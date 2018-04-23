@@ -1,0 +1,7 @@
+<div class="parent">  
+<div class="stable">stable 固定宽度200px</div>  
+<div class="change">
+    <view>1</view>
+    <view>2</view>
+</div>  
+</div>

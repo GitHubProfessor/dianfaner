@@ -1,0 +1,44 @@
+.container{  
+    width:100%;  
+    height:100%;  
+    border:1px solid #222;  
+    display:flex;/*设为伸缩容器*/  
+    flex-flow:column;/*伸缩项目单行排列*/  
+}  
+.header{  
+    width:100%;
+    border:1px solid  #ccc; 
+    text-align: center; 
+    height: 200rpx;
+    line-height: 200rpx;
+}  
+
+.content{  
+    flex:1;/*这里设置为占比1，填充满剩余空间*/  
+    display: flex;
+    flex-direction: column;
+}  
+
+.footer {
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: orange;
+    color: white;
+}
+
+.content .pay-method {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100rpx;
+}
+
+.content .pay-method .wechat-pay,.ali-pay {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20rpx;
+}

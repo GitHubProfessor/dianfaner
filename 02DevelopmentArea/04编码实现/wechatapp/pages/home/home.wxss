@@ -1,0 +1,46 @@
+.container {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    font-size: 26rpx;
+}
+
+.header {
+    width:100%;
+    height:100rpx;
+    flex:none;
+    background-color: orange;
+}
+
+.search-input{
+  border: 1px solid linen;
+  background-color: white;
+  height: 60rpx;
+  flex-grow: 1;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.catagorys {
+    overflow:hidden;
+    white-space:nowrap;
+    margin:20rpx;
+    padding:20rpx;
+}
+
+.catagorys text{
+     padding-right:20rpx; 
+}
+
+.foods {
+    flex:1 1 auto;
+    height:100%;
+    width:100%;
+    overflow-y:auto;
+    padding:20rpx;
+}
+
+.footer{
+    display: flex;
+}

@@ -1,0 +1,38 @@
+.container{  
+    width:100%;  
+    height:100%;   
+    display:flex;/*设为伸缩容器*/  
+    flex-flow:column;/*伸缩项目单行排列*/  
+    background-color: white;
+}  
+.header{  
+    align-items: center;  
+    justify-content: center; 
+    height: 400rpx;
+    line-height: 400rpx;
+    text-align: center;
+}  
+
+.content{  
+    flex:1;/*这里设置为占比1，填充满剩余空间*/   
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}  
+.content image {
+    width:200rpx;
+    height: 200rpx;
+}
+
+.content .nav view{
+    display: flex;
+    margin-top: 40rpx;
+    background-color:orange;
+    border: 1rpx solid orange;
+    width: 260rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    justify-content: center;
+    color:white;
+    font-size: 26rpx;
+}

@@ -1,0 +1,54 @@
+<view class='container'>
+    <view class='header'>
+           <input class='search-input' placeholder='拉面' placeholder-style='font-size:11px;margin-left:10px;'/>
+    </view>
+
+    <view class='good_food'>
+      <text style="padding:20rpx;">商家推荐</text>
+      <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" style='margin:20rpx;'>
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" style="width:100%;"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    
+    <view class="catagorys">
+        <scroll-view  scroll-x >
+            <text class='catagory'>套餐</text>
+            <text class='catagory'>盖饭</text>
+            <text class='catagory'>盖面</text>
+            <text class='catagory'>小抄</text>
+            <text class='catagory'>套餐</text>
+            <text class='catagory'>盖饭</text>
+            <text class='catagory'>盖面</text>
+            <text class='catagory'>小抄</text>
+            <text class='catagory'>套餐</text>
+            <text class='catagory'>盖饭</text>
+            <text class='catagory'>盖面</text>
+            <text class='catagory'>小抄</text>
+            <text class='catagory'>套餐</text>
+            <text class='catagory'>盖饭</text>
+            <text class='catagory'>盖面</text>
+            <text class='catagory'>小抄</text>
+        </scroll-view>
+    </view>
+   
+      
+    <!-- 菜单部分-->
+    <view class='foods'>
+        <scroll-view>
+            <block wx:for="{{8}}">
+              <view class='food' style='display:flex;flex-direction:row;'>
+                <image bindtap="toDetail"  class="food_pic" src="../../picture/placeholder.png" style='height:150rpx;width:150rpx;margin-top:20rpx;'/>
+                <view class="info">
+                </view>
+              </view>
+            </block>
+        </scroll-view>
+    </view>
+    <view>
+        <image bindtap="toShoppingCard" src='../../picture/total1.png' style='width:100rpx; height:100rpx;'></image>
+    </view>
+</view>

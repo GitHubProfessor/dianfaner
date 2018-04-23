@@ -1,0 +1,20 @@
+/**app.wxss**/
+
+
+
+/* .footer{
+  display:block;
+   background-color:lightsalmon;
+  height:80rpx;
+  width:100%; 
+  color:green; 
+  position:fixed; 
+  bottom:0; 
+  text-align: center;
+  z-index: 999;
+} */
+
+page{
+  height: 100%;
+  background-color: #f6f6f6; 
+}

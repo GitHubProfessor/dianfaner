@@ -1,0 +1,57 @@
+/* pages/detail/detail.wxss */
+.container{  
+    width:100%;  
+    height:100%;   
+    display:flex;/*设为伸缩容器*/  
+    flex-flow:column;/*伸缩项目单行排列*/  
+}  
+ 
+.content{  
+    flex:1; /*这里设置为占比1，填充满剩余空间*/  
+    /* border:1px solid #ff4400;   */
+    font-size: 26rpx;
+}  
+
+.tag1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+
+    background-color: white;
+}
+
+.tag1 button {
+    max-width:200rpx;
+
+    padding:4rpx 8rpx;
+    margin: 20rpx;
+    font-size: 22rpx;
+
+    background-color: white;
+
+} 
+
+.content view{
+    background-color: white;
+    margin-bottom: 20rpx;
+}
+
+
+.close{
+    margin-left: 20rpx;
+}
+
+.close button{
+     padding:2rpx;
+     line-height:70rpx;
+     width:80rpx;
+     height:80rpx;
+     border:1rpx solid black;
+     background-color:black;
+     opacity:0.5;
+     position:fixed;
+     border-radius:100px;
+     color:white
+}
+

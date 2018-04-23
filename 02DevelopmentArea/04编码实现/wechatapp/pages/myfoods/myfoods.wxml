@@ -1,0 +1,26 @@
+<!--pages/myfoods/myfoods.wxml-->
+<view class="container">  
+    <view class="stable">你的物品：</view>  
+    <view class="foods">
+        <scroll-view>
+            <block wx:for="{{8}}">
+              <view class='food' >
+                <image bindtap="toDetail"  class="food_pic" src="../../picture/placeholder.png" />
+                <view style='display:flex;flex-direction:column;'>
+                    <text>吃蛋人 x1</text>
+                    <view>价格</view>
+                </view>
+                <view style="flex-grow:1;text-align:right">
+                    <image src='/picture/delete.png' style="width:50rpx;height:50rpx;"></image>
+                </view>
+               
+              </view>
+            </block>
+        </scroll-view>
+    </view> 
+
+    <view class='footer'>
+        <view style='flex-grow: 8;line-height:100rpx;'><text>合计：</text></view>
+        <view bindtap="toPay" style='flex-grow: 2;background-color:#ff9800;text-align:center;line-height:100rpx;'>付款下单</view>
+    </view> 
+</view>

@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+ <view class="close">
+        <button bindtap="close">X</button>
+    </view>
+<view class="container">
+   
+    <image src='/picture/detail_pic.png' mode='widthFix' style='width:100%;'></image>
+    <view class="content">
+        <view>吃豆人</view>
+        <view>月销量{{20}}</view>
+        <view>价格：{{20}}元</view>
+
+        <view>分类：</view>
+        <view class="tag1">
+            <block wx:for="{{2}}">
+                <button>经典款</button>
+                <button>限量版</button>
+                <button>纪念版</button>
+                <button>珍藏版</button>
+            </block>
+        </view>
+    </view>
+
+    <view> 
+        <image src='../../picture/total1.png' style='width:100rpx; height:100rpx;'></image>
+    </view>  
+</view>
