@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/list/list",
         "pages/index/index",
         "pages/pay/pay",
         "pages/home/home",
@@ -8,9 +9,9 @@
         
     ],
     "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "black"
+       "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF9C35",
+    "navigationBarTitleText": "dianfaner",
+    "navigationBarTextStyle": "white"
     }
 }

@@ -3,7 +3,7 @@
            <input class='search-input' placeholder='拉面' placeholder-style='font-size:11px;margin-left:10px;'/>
     </view>
 
-    <view class='good_food'>
+    <!-- <view class='good_food'>
       <text style="padding:20rpx;">商家推荐</text>
       <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" style='margin:20rpx;'>
         <block wx:for="{{imgUrls}}">
@@ -12,11 +12,11 @@
           </swiper-item>
         </block>
       </swiper>
-    </view>
+    </view> -->
     
     <view class="catagorys">
         <scroll-view  scroll-x >
-            <text class='catagory'>套餐</text>
+            <text class='catagory'>全部</text>
             <text class='catagory'>盖饭</text>
             <text class='catagory'>盖面</text>
             <text class='catagory'>小抄</text>
@@ -39,11 +39,22 @@
     <!-- 菜单部分-->
     <view class='foods'>
         <scroll-view>
-            <block wx:for="{{8}}">
-              <view class='food' style='display:flex;flex-direction:row;'>
-                <image bindtap="toDetail"  class="food_pic" src="../../picture/placeholder.png" style='height:150rpx;width:150rpx;margin-top:20rpx;'/>
-                <view class="info">
+            <block wx:for="{{foods}}">
+              <view class='food'>
+                <image bindtap="toDetail"  class="food_pic" src="http://localhost:8089/img/food/{{item.pictureUrl}}"/>
+                <view class="food-info">
+                    <view class="food-info-col">
+                        {{item.name}}
+                    </view>
+                     <view class="food-info-col" style="display:flex;flex-direction:row;">
+                        ￥ {{item.price}}元  
+                    </view>
                 </view>
+                <view class="operation">
+                    <image class ="delete" src='/picture/delete.png' bindtap="deleteFood" data-id="{{item.id}}"></image>
+                    <view id="{{item.id}}"style="align-self: center; padding:0rpx 10rpx;width:50rpx;"><input type="text" /></view>
+                    <image class ="add" src='/picture/add.png'bindtap="addFood" data-id="{{item.id}}"></image>
+                </view>  
               </view>
             </block>
         </scroll-view>

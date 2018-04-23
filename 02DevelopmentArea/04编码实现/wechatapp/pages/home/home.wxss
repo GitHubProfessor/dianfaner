@@ -38,9 +38,44 @@
     height:100%;
     width:100%;
     overflow-y:auto;
-    padding:20rpx;
 }
+
+.food{
+    display:flex;
+    flex-direction:row;
+    padding:10rpx;
+}
+
+.food_pic {
+    height:150rpx;
+    width:150rpx;
+}
+
+.food-info{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+.food-info-col{
+    flex:1;
+    padding-left: 20rpx;
+}
+
+.operation {
+    display:flex;
+    flex-direction:row;
+    align-items: flex-start /* 内容垂直居中 */
+}
+
+.operation image{
+    width:50rpx;
+    height:50rpx; 
+    align-self: center; /* 内容垂直居中 */
+}
+
 
 .footer{
     display: flex;
 }
+
